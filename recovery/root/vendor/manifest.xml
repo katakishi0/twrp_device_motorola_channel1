@@ -205,16 +205,6 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.power</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -262,16 +252,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-        </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -419,26 +399,6 @@
         <fqname>@2.0::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>motorola.hardware.camera.imgtuner</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IImageTuning</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IImageTuning/default</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>motorola.hardware.tv</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDTVHW</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDTVHW/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>motorola.hardware.vibrator</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -491,12 +451,12 @@
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IFactory/default</fqname>
+        <fqname>@1.1::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
@@ -549,16 +509,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ILinkLatency/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.factory</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
