@@ -23,7 +23,6 @@ TARGET_NO_BOOTLOADER := true
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432        #    32768 * 1024 mmcblk0p41-42
-BOARD_HAS_NO_REAL_SDCARD := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -46,7 +45,13 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-include $(LOCAL_PATH)/kernel.mk
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78B0000 vmalloc=300M buildvariant=user androidboot.usbconfigfs=true androidboot.hab.product=channel androidboot.hab.cid=50 androidboot.hab.csv=3 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_PAGESIZE := 2048
 
 TW_EXCLUDE_SUPERSU := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -61,7 +66,6 @@ TW_USE_TOOLBOX := true
 TW_Y_OFFSET := 110
 TW_H_OFFSET := -110
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-
 
 # Verified Boot
 BOARD_AVB_ENABLE := false
