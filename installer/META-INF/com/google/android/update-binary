@@ -32,8 +32,8 @@ extract() {
 }
 
 print "#############################################"
-print "# TWRP installer for Moto g(7) power(ocean) #"
-print "#                by @SyberHexen             #"
+print "# TWRP installer for Moto G7 Play (channel) #"
+print "#              by Channel Dev Team          #"
 print "#############################################"
 print
 # Unpack the installer

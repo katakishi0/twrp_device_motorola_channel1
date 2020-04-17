@@ -66,8 +66,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.system_root_image=true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ocean
-PRODUCT_NAME := omni_ocean
+PRODUCT_DEVICE := channel
+PRODUCT_NAME := omni_channel
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g(7) power
+PRODUCT_MODEL := moto g(7) play
 PRODUCT_MANUFACTURER := motorola
