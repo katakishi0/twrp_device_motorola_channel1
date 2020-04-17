@@ -94,6 +94,7 @@ PLATFORM_VERSION := 16.1.0
 PLATFORM_SECURITY_PATCH := 2030-01-01
 
 # Installer
+AB_OTA_UPDATER := true
 USE_RECOVERY_INSTALLER := true
 RECOVERY_INSTALLER_PATH := device/motorola/channel/installer
 
