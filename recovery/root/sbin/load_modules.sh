@@ -19,6 +19,9 @@ load_panel()
         csot)
             insmod /vendor/lib/modules/nova_mmi.ko
             ;;
+        djn)
+            insmod /vendor/lib/modules/nova_36525_mmi.ko
+            ;;
         *)
 		    echo "$panel_supplier not supported"
 		        ;;
@@ -47,6 +50,11 @@ device_model()
             insmod /vendor/lib/modules/drv2624_mmi.ko
             insmod /vendor/lib/modules/sx932x_sar.ko
             insmod /vendor/lib/modules/tps61280.ko
+            ;;
+        channel)
+            insmod /vendor/lib/modules/aw8624.ko
+            insmod /vendor/lib/modules/drv2624_mmi.ko
+            insmod /vendor/lib/modules/sx932x_sar.ko
             ;;
         *)
             echo "$device_name not supported"
