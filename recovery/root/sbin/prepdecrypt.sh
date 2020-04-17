@@ -64,48 +64,45 @@ else
 fi
 finish
 
-mkdir -p /vendor/lib64/hw/
+mkdir -p /vendor/lib/hw/
 
-cp /s/system/lib64/android.hidl.base@1.0.so /sbin/
-cp /s/system/lib64/libion.so /sbin/
-cp /s/system/lib64/libicuuc.so /sbin/
-cp /s/system/lib64/libxml2.so /sbin/
+cp /s/system/lib/android.hidl.base@1.0.so /sbin/
+cp /s/system/lib/libion.so /sbin/
+cp /s/system/lib/libxml2.so /sbin/
 
 relink /v/bin/qseecomd
 
-cp /v/lib64/libdiag.so /vendor/lib64/
-cp /v/lib64/libdrmfs.so /vendor/lib64/
-cp /v/lib64/libdrmtime.so /vendor/lib64/
-cp /v/lib64/libGPreqcancel.so /vendor/lib64/
-cp /v/lib64/libGPreqcancel_svc.so /vendor/lib64/
-cp /v/lib64/libqdutils.so /vendor/lib64/
-cp /v/lib64/libqisl.so /vendor/lib64/
-cp /v/lib64/libqservice.so /vendor/lib64/
-cp /v/lib64/libQSEEComAPI.so /vendor/lib64/
-cp /v/lib64/librecovery_updater_msm.so /vendor/lib64/
-cp /v/lib64/librpmb.so /vendor/lib64/
-cp /v/lib64/libsecureui.so /vendor/lib64/
-cp /v/lib64/libSecureUILib.so /vendor/lib64/
-cp /v/lib64/libsecureui_svcsock.so /vendor/lib64/
-cp /v/lib64/libspcom.so /vendor/lib64/
-cp /v/lib64/libspl.so /vendor/lib64/
-cp /v/lib64/libssd.so /vendor/lib64/
-cp /v/lib64/libStDrvInt.so /vendor/lib64/
-cp /v/lib64/libtime_genoff.so /vendor/lib64/
-cp /v/lib64/libkeymasterdeviceutils.so /vendor/lib64/
-cp /v/lib64/libkeymasterprovision.so /vendor/lib64/
-cp /v/lib64/libkeymasterutils.so /vendor/lib64/
-cp /v/lib64/libqtikeymaster4.so /vendor/lib64/
-cp /v/lib64/vendor.qti.hardware.tui_comm@1.0.so /vendor/lib64/
-cp /v/lib64/hw/bootctrl.msm8953.so /vendor/lib64/hw/
-cp /v/lib64/hw/android.hardware.boot@1.0-impl.so /vendor/lib64/hw/
-cp /v/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib64/hw/
-#cp /v/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so /vendor/lib64/hw/
+cp /v/lib/libdiag.so /vendor/lib/
+cp /v/lib/libdrmfs.so /vendor/lib/
+cp /v/lib/libdrmtime.so /vendor/lib/
+cp /v/lib/libGPreqcancel.so /vendor/lib/
+cp /v/lib/libGPreqcancel_svc.so /vendor/lib/
+cp /v/lib/libqdutils.so /vendor/lib/
+cp /v/lib/libqisl.so /vendor/lib/
+cp /v/lib/libqservice.so /vendor/lib/
+cp /v/lib/libQSEEComAPI.so /vendor/lib/
+cp /v/lib/librecovery_updater_msm.so /vendor/lib/
+cp /v/lib/librpmb.so /vendor/lib/
+cp /v/lib/libsecureui.so /vendor/lib/
+cp /v/lib/libSecureUILib.so /vendor/lib/
+cp /v/lib/libsecureui_svcsock.so /vendor/lib/
+cp /v/lib/libspcom.so /vendor/lib/
+cp /v/lib/libspl.so /vendor/lib/
+cp /v/lib/libssd.so /vendor/lib/
+cp /v/lib/libStDrvInt.so /vendor/lib/
+cp /v/lib/libtime_genoff.so /vendor/lib/
+cp /v/lib/libkeymasterdeviceutils.so /vendor/lib/
+cp /v/lib/libkeymasterprovision.so /vendor/lib/
+cp /v/lib/libkeymasterutils.so /vendor/lib/
+cp /v/lib/libqtikeymaster4.so /vendor/lib/
+cp /v/lib/vendor.qti.hardware.tui_comm@1.0.so /vendor/lib/
+cp /v/lib/hw/bootctrl.msm8953.so /vendor/lib/hw/
+cp /v/lib/hw/android.hardware.boot@1.0-impl.so /vendor/lib/hw/
+cp /v/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib/hw/
 
 cp /v/manifest.xml /vendor/
 cp /v/compatibility_matrix.xml /vendor/
 
 relink /v/bin/hw/android.hardware.boot@1.0-service
 relink /v/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-#relink /v/bin/hw/android.hardware.keymaster@3.0-service-qti
 relink /v/bin/hw/android.hardware.keymaster@4.0-service-qti
