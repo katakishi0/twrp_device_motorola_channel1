@@ -95,7 +95,7 @@ PLATFORM_SECURITY_PATCH := 2030-01-01
 
 # Installer
 AB_OTA_UPDATER := true
-USE_RECOVERY_INSTALLER := true
+USE_RECOVERY_INSTALLER := false
 RECOVERY_INSTALLER_PATH := device/motorola/channel/installer
 
 # Crypto
