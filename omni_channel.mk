@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
